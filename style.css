@@ -1,27 +1,57 @@
-#calc-table a
+body
 {
-  text-decoration: none;
-  display: block;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
+  margin: 0;
 }
 
-#calc-table tr td
-{
-  border: 1px solid black;
-  width: 50px;
-  height: 50px;
-  background-color: #ccffff;
-  font-size: 30px;
-}
-
-#calc-table
+.centered-box
 {
   margin: auto;
 }
 
-.textAlnCenter
+#calc-table
 {
+  font-size: 40px;
+
+  border-spacing: 10px;
+  border-radius: 15px;
+
+  background-color: #C25B56;
+}
+
+#calc-table .calc-table-bottom-right-corner-cell
+{
+  border-radius: 0 0 10px 0;
+}
+
+#calc-table .calc-table-bottom-left-corner-cell
+{
+  border-radius: 0 0 0 10px;
+}
+
+#calc-table .calc-table-cell
+{
+  width: 100px;
+  height: 100px;
+
   text-align: center;
+
+  cursor: pointer;
+
+  background-color: #FEF6EB;
+}
+
+#calc-table .calc-table-cell > a
+{
+  display: block;
+}
+
+#calc-table #calc-table-digits-area
+{
+  height: 100px;
+
+  text-align: right;
+
+  border-radius: 10px 10px 0 0;
+
+  background-color: #FEF6EB;
 }

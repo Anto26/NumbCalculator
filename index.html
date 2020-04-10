@@ -16,83 +16,88 @@
 
   <body>
 
-    <table id="calc-table" class="textAlnCenter">
+    <table id="calc-table" class="centered-box">
       <caption>Calculator</caption>
 
+      <!-- First calculator row -->
       <tr>
-        <td colspan="4">
+        <td colspan="4" id="calc-table-digits-area">
           <span id="digitsArea"></span>
         </td>
       </tr>
 
+      <!-- Second calculator row -->
       <tr>
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(9)">9</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(8)">8</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(7)">7</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell calc-table-top-right-corner-cell">
           <a onclick="operatorButtonClicked('/')">/</a>
         </td>
       </tr>
 
+      <!-- Third calculator row -->
       <tr>
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(4)">4</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(5)">5</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(6)">6</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="operatorButtonClicked('*')">*</a>
         </td>
       </tr>
 
+      <!-- Fourth calculator row -->
       <tr>
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(1)">1</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(2)">2</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="numButtonClicked(3)">3</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="operatorButtonClicked('−')">−</a>
         </td>
       </tr>
 
+      <!-- Fifth calculator row -->
       <tr>
-        <td>
+        <td class="calc-table-cell calc-table-bottom-left-corner-cell">
           <a onclick="numButtonClicked(0)">0</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell">
           <a onclick="">.</a>
         </td>
 
-        <td rowspan="2">
+        <td rowspan="2" class="calc-table-cell">
           <a onclick="resultButtonClicked()">=</a>
         </td>
 
-        <td>
+        <td class="calc-table-cell calc-table-bottom-right-corner-cell">
           <a onclick="operatorButtonClicked('+')">+</a>
         </td>
       </tr>
